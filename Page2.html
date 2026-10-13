@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="veiwpoint" content="width=device-width, inital-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+	<link rel="icon" sizes="192x192" href="images/icon.png">
+	<meta name="keywords" content="Cool Games, Food Chain, Egg Hunt, Wizard's Quest, Infinite Art, Llama Dev">
+</head>
+
+<body>
+	<header>
+		<div id="headtext">
+			<h1>Llama Dev's Game Catalog</h1>
+		</div>
+		<div id="box"> </div>
+	</header>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home Page<hr></a></li>
+				<li><a href="Page1.html">Food Chain<hr></a></li>
+				<li><a href="Page2.html">Wizards Quest<hr></a></li>
+				<li><a href="Page3.html">Egg Hunt<hr></a></li>
+				<li><a href="Page4.html" id="ArtLink">Infinite Art</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<div class="text">
+			<h2>Wizard's Quest</h2>
+			<p>On this webpage, you will be able to play A Wizard&#39;s Quest by Llama
+			Dev. This game was created in Twine. In A Wizard&#39;s Quest, you live in a village
+			surrounded by a magical force field that stops more monsters from entering the area.
+			Marvin the Great created the force field to stop The Shadow King from using an army of
+			monsters to destroy the town. When he made the force field, it used the last of his
+			power, so after creating it, he disappeared, leaving only his staff behind. It is said that
+			the staff still sits at the top of the tallest mountain, waiting for someone to use it once
+			more. The town has lived like this for many years; however, now, to the town’s
+			knowledge, all the food inside the force field has already been gathered and eaten.</p>
+		</div>
+		
+		<div class="text">
+			<h2>Gameplay</h2>
+			<p>This video contains spoilers and behind the scene footage.</p>
+			<video id="WizardVid" controls poster="images/WizardsQuestVideoIcon.png">
+				<source src="media/Wizard.mp4" type="video/mp4"> 
+				<p>Your browser dose not support the video element.</p>
+			</video>
+		</div>
+	
+	<div class="text">
+		<div id="Game">
+		
+			<button id="b1" onclick="showIframe()">Start Game</button>
+		
+			<div style="width: 1000px; height: 550px; overflow: hidden;">
+			<iframe id="G" src="about:blank" style = "width: 800px; height: 425px; border: 3px solid #000;"> </iframe></div>
+			
+		</div>
+		
+				 <form>
+		 
+			<fieldset>
+				<h2>Wizard's Quest Rating</h2>
+			
+			   <div class="rating">
+				 <input type="radio" hidden name="rate" id="star5" data-idx="0">	
+				 <label for="star5"></label>
+
+				 <input type="radio" hidden name="rate" id="star4" data-idx="1">	
+				 <label for="star4"></label>
+
+				 <input type="radio" hidden name="rate" id="star3" data-idx="2">	
+				 <label for="star3"></label>
+
+				 <input type="radio" hidden name="rate" id="star2" data-idx="3">	
+				 <label for="star2"></label>
+
+				 <input type="radio" hidden name="rate" id="star1" data-idx="4">	
+				 <label for="star1"></label>
+			   </div>
+			   
+			   <p>Player Feedback</p>
+			   
+			   <textarea id="questions" name="questions" rows="10" cols="80"></textarea>
+			   
+			   	<input type="submit" id="submit" value="Submit" class="btn">
+			   
+			</fieldset>
+			
+		</form>
+		</div>
+		
+	</main>
+	
+	<footer>
+		<p>This webpage was created by Matthew Smith </p>
+		<p>&copy; Copyright 2026. All Rights Reserved.</p>
+	</footer>
+
+		<script>
+			function showIframe() {
+				 document.getElementById('G').src = "Games/AWizardQuest.html";
+				 document.getElementById('b1').style.display = "none";
+			}
+		</script>
+		
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="veiwpoint" content="width=device-width, inital-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+	<link rel="icon" sizes="192x192" href="images/icon.png">
+	<meta name="keywords" content="Cool Games, Food Chain, Egg Hunt, Wizard's Quest, Llama Dev, Infinite Art">
+</head>
+
+<body>
+	<header>
+		<div id="headtext">
+			<h1>Llama Dev's Game Catalog</h1>
+		</div>
+		<div id="box"> </div>
+	</header>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home Page<hr></a></li>
+				<li><a href="Page1.html">Food Chain<hr></a></li>
+				<li><a href="Page2.html">Wizards Quest<hr></a></li>
+				<li><a href="Page3.html">Egg Hunt<hr></a></li>
+				<li><a href="Page4.html" id="ArtLink">Infinite Art</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<div class="text">
+			<h2>Infinite Art</h2>
+			<p>On this webpage, you can play Infinite Art by Llama Dev, a game made using
+			GDevelop. This game was created for fun, and is not a serious art program. In Infinite
+			Art, you use different tools to draw. After you are done drawing, clicking the save button
+			will save your art. Then, using the save menu, you can reload your art. You have the
+			ability to change the color with the RGB color system. You can change the size of your
+			pen to draw thicker or thinner lines. Using the eye drop tool lets you select a color you
+			have already used. The trash can allows you to erase a spot where you have drawn.
+			Pressing the delete key on your keyboard, clears what you have drawn. Moving the
+			arrow keys allows you to view more of the canvas.</p>
+		</div>
+		
+		<div class="text">
+			<h2>Gameplay</h2>
+			<p>This video contains spoilers and behind the scene footage.</p>
+			<video id="WizardVid" controls poster="images/ArtVideoIcon.png">
+				<source src="media/Art.mp4" type="video/mp4"> 
+				<p>Your browser dose not support the video element.</p>
+			</video>
+		</div>
+	
+	<div class="text">
+		<div id="Game">
+		
+			<button id="b1" onclick="showIframe()">Start Game</button>
+		
+			<div style="width: 1000px; height: 550px; overflow: hidden;">
+				<iframe id="G" src="about:blank" scrolling="no" style= "width: 790px; height: 550px; margin-top: -140px; border: 3px solid #000;"> </iframe> </div>
+			
+		</div>
+		
+				 <form>
+		 
+			<fieldset>
+				<h2>Infinite Art Rating</h2>
+			
+			   <div class="rating">
+				 <input type="radio" hidden name="rate" id="star5" data-idx="0">	
+				 <label for="star5"></label>
+
+				 <input type="radio" hidden name="rate" id="star4" data-idx="1">	
+				 <label for="star4"></label>
+
+				 <input type="radio" hidden name="rate" id="star3" data-idx="2">	
+				 <label for="star3"></label>
+
+				 <input type="radio" hidden name="rate" id="star2" data-idx="3">	
+				 <label for="star2"></label>
+
+				 <input type="radio" hidden name="rate" id="star1" data-idx="4">	
+				 <label for="star1"></label>
+			   </div>
+			   
+			   <p>Player Feedback</p>
+			   
+			   <textarea id="questions" name="questions" rows="10" cols="80"></textarea>
+			   
+			   	<input type="submit" id="submit" value="Submit" class="btn">
+			   
+			</fieldset>
+			
+		</form>
+		</div>
+		
+	</main>
+	
+	<footer>
+		<p>This webpage was created by Matthew Smith </p>
+		<p>&copy; Copyright 2026. All Rights Reserved.</p>
+	</footer>
+
+		<script>
+			function showIframe() {
+				 document.getElementById('G').src = "https://gd.games/llama_dev/muddled-steam";
+				 document.getElementById('b1').style.display = "none";
+			}
+		</script>
+		
+</body>
+</html>
